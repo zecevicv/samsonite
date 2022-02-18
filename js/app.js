@@ -102,10 +102,29 @@ if (document.querySelector('.product-slider .swiper')) {
   });
 }
 
+/* #Reviews Slider
+  ======================================================= */
+if (document.querySelector('.reviews-slider .swiper')) {
+  new Swiper(".reviews-slider .swiper", {
+    pagination: {
+      el: ".reviews-slider .swiper-pagination",
+      type: "progressbar",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.13
+      },
+      1024: {
+        slidesPerView: 3.8
+      }
+    }
+  });
+}
+
 /* #Customers Logo Slider
   ======================================================= */
-if (document.querySelector('.customers .swiper')) {
-  new Swiper(".customers .swiper", {
+if (document.querySelector('.running-logos .swiper')) {
+  new Swiper(".running-logos .swiper", {
     loop: true,
     freeMode: true,
     spaceBetween: 0,
@@ -129,14 +148,14 @@ if (document.querySelector('.customers .swiper')) {
   });
 }
 
-/* #Why Slider
+/* #Media 2 Slider
 ======================================================= */
-if (document.querySelector('.why .swiper')) {
-  new Swiper('.why .swiper', {
+if (document.querySelector('.media-2 .swiper')) {
+  new Swiper('.media-2 .swiper', {
     loop: true,
     navigation: {
-      nextEl: '.why .next',
-      prevEl: '.why .prev',
+      nextEl: '.media-2 .next',
+      prevEl: '.media-2 .prev',
     },
   });
 }
