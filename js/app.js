@@ -45,20 +45,58 @@ if (document.querySelector('.banner .swiper')) {
   });
 }
 
-/* #Expertise
+/* #Post Slider
   ======================================================= */
-if (document.querySelector('.expertise .swiper')) {
-  new Swiper(".expertise .swiper", {
+if (document.querySelector('.post-slider .swiper')) {
+  const postSliderEl = document.querySelector('.post-slider');
+
+  if (!postSliderEl.classList.contains('alt')) {
+    new Swiper(".post-slider .swiper", {
+      pagination: {
+        el: ".post-slider .swiper-pagination",
+        type: "progressbar",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.13
+        },
+        1024: {
+          slidesPerView: 3.33
+        }
+      }
+    });
+  } else {
+    new Swiper(".post-slider .swiper", {
+      pagination: {
+        el: ".post-slider .swiper-pagination",
+        type: "progressbar",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.05
+        },
+        1024: {
+          slidesPerView: 2.8
+        }
+      }
+    });
+  }
+}
+
+/* #Product Slider
+  ======================================================= */
+if (document.querySelector('.product-slider .swiper')) {
+  new Swiper(".product-slider .swiper", {
     pagination: {
-      el: ".expertise .swiper-pagination",
+      el: ".product-slider .swiper-pagination",
       type: "progressbar",
     },
     breakpoints: {
       0: {
-        slidesPerView: 1.13
+        slidesPerView: 1.33
       },
       1024: {
-        slidesPerView: 3.33
+        slidesPerView: 3.4
       }
     }
   });
