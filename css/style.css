@@ -2618,3 +2618,53 @@ body {
     margin-bottom: 4vw;
   }
 }
+
+/* #Text Page
+================================================== */
+.text-page-content {
+  padding: 2.6vw 0 6.77vw 0;
+}
+
+.text-page-content .container {
+  width: 52.3%;
+}
+
+.text-page-content ol {
+  padding-right: 19px;
+}
+
+.text-page-content h2 {
+  margin-top: 1.5vw;
+  margin-bottom: .5vw;
+}
+
+.text-page-content p {
+  margin-bottom: .78vw;
+}
+
+.text-page-content ol li:not(:last-child) {
+  margin-bottom: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .text-page-content {
+    padding: 2.66vw 0 17.33vw 0;
+  }
+  
+  .text-page-content .container {
+    width: 90%;
+  }
+  
+  .text-page-content h2 {
+    margin-top: 9.33vw;
+    margin-bottom: 2.4vw;
+  }
+  
+  .text-page-content p {
+    margin-bottom: 2.4vw;
+  }
+  
+  .text-page-content ol li:not(:last-child) {
+    margin-bottom: 2.4vw;
+  }
+}
