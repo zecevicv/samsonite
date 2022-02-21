@@ -2379,3 +2379,164 @@ body {
     margin-top: 2.66vw;
   }
 }
+
+/* #Story 
+================================================== */
+.story {
+  position: relative;
+}
+
+.story .img img {
+  width: 100%;
+}
+
+.story .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12.5vw;
+  width: 23.85vw;
+}
+
+.story .text h2 {
+  margin-bottom: 1.3vw;
+}
+
+.story .text h2 img {
+  width: 13.5vw;
+}
+
+.story .text p {
+  line-height: 1.55;
+}
+
+@media (max-width: 1023.98px) {
+  .story .text {
+    position: static;
+    transform: none;
+    margin-right: 5.33vw;
+    width: 83.73%;
+    padding-top: 2vw;
+    padding-bottom: 18.66vw;
+  }
+  
+  .story .text h2 {
+    margin-bottom: 2.66vw;
+  }
+  
+  .story .text h2 img {
+    display: inline-block;
+    width: 36vw;
+  }
+  
+  .story .text p {
+    line-height: 1.15;
+  }
+}
+
+/* #Video Section
+================================================== */
+.video-section {
+  position: relative;
+}
+
+.video-section picture,
+.video-section picture img {
+  width: 100%;
+}
+
+.video-section a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-section a img {
+  width: 4vw;
+}
+
+@media (max-width: 1023.98px) {
+  .video-section a img {
+    width: 16vw;
+  }
+}
+
+/* #Media Boxes
+================================================== */
+.media-boxes {
+  padding: 6.77vw 0 3.125vw 0;
+}
+
+.media-boxes .container {
+  width: 90%;
+}
+
+.media-box {
+  display: flex;
+}
+
+.media-box .img,
+.media-box .text {
+  flex: 0 0 50%;
+}
+
+.media-box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.media-box .img img {
+  width: 100%;
+  height: 28.94vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.media-box .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.media-box .text-wrap {
+  width: 28.95vw;
+}
+
+.media-box p {
+  line-height: 1.66;
+}
+
+@media (max-width: 1023.98px) {
+  .media-boxes {
+    padding: 0;
+    margin-bottom: 4vw;
+  }
+  
+  .media-boxes .container {
+    width: 100%;
+  }
+  
+  .media-box {
+    display: block;
+  }
+  
+  .media-box .img img {
+    height: 76.4vw;
+  }
+  
+  .media-box .text {
+    display: block;
+    text-align: right;
+    padding: 12vw 0;
+  }
+  
+  .media-box .text-wrap {
+    width: 86%;
+    margin: 0 auto;
+  }
+  
+  .media-box p {
+    line-height: 1.15;
+  }
+}
