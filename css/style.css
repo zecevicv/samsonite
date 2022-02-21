@@ -2540,3 +2540,42 @@ body {
     line-height: 1.15;
   }
 }
+
+/* #Error
+================================================== */
+.error {
+  position: relative;
+}
+
+.error .img img,
+.error .img picture {
+  width: 100%;
+}
+
+.error .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.error h1 {
+  line-height: .95;
+}
+
+.error p {
+  margin-bottom: 1.5vw;
+  line-height: 1.2;
+}
+
+@media (max-width: 1023.98px) {
+  .error h1 {
+    line-height: .95;
+  }
+  
+  .error p {
+    margin-bottom: 4vw;
+  }
+}
