@@ -1,5 +1,9 @@
 /* #Global
 ================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Heebo', sans-serif;
   line-height: 1.45;
@@ -81,12 +85,37 @@ body {
 .link {
   display: inline-flex;
   align-items: center;
-  border-bottom: 1px solid black;
 }
 
 .link img {
   width: .3vw;
   margin-right: .625vw;
+}
+
+.link {
+  padding-bottom: .15vw;
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}
+
+.link.link-white::before {
+  background-color: white;
 }
 
 /* Btn */
@@ -102,6 +131,12 @@ body {
   backface-visibility: hidden;
   border: 1px solid transparent;
   transition: all .3s ease;
+  font-weight: 700;
+  min-width: 11.45vw;
+}
+
+.btn span {
+  min-width: 11.45vw;
 }
 
 .btn.btn-small {
@@ -246,6 +281,11 @@ body {
 @media (max-width: 1023.98px) {
 
   /* Link */
+  .link {
+    padding-bottom: 1vw;
+    position: relative;
+  } 
+
   .link img {
     width: .3vw;
     margin-right: .625vw;
@@ -256,6 +296,11 @@ body {
     height: 10vw;
     font-size: 4vw;
     padding: 0 9vw;
+  }
+
+  .btn,
+  .btn span {
+    min-width: 40vw;
   }
 
   /* Primary */
@@ -368,14 +413,8 @@ body {
   align-items: center;
 }
 
-.header-links>ul>li>a {
-  border-bottom: 3px solid transparent;
-  transition: all .3s ease;
-}
-
-.header-links>ul>li>a:hover,
-.header-links>ul>li>a.active {
-  border-bottom: 3px solid black;
+.header-links>ul>li>a::before {
+  height: 3px;
 }
 
 .header-links ul {
@@ -545,6 +584,10 @@ body {
   .header-links>ul>li>a {
     border-bottom: 1px solid #CCCCCC;
     padding: 4vw 0;
+  }
+
+  .header-links>ul>li>a::before {
+    height: 1px;
   }
 
   .header-links ul {
@@ -2040,7 +2083,7 @@ body {
 /* #Contact Form
 ================================================== */
 .contact-form {
-  padding: 2.3vw 0 7.9vw 0;
+  padding: 7.55vw 0 7.9vw 0;
 }
 
 .contact-form .container {
@@ -2080,7 +2123,7 @@ body {
 
 @media (max-width: 1023.98px) {
   .contact-form {
-    padding: 4vw 0 22vw 0;
+    padding: 22vw 0;
   }
 
   .contact-form .container {
@@ -2252,12 +2295,8 @@ body {
 /* #Post Slider
 ================================================== */
 .reviews-slider {
-  padding: 5.2vw 0;
+  padding: 5.2vw 0 0 0;
   overflow: hidden;
-}
-
-.landing-page .reviews-slider {
-  padding: 7.8vw 0 6.77vw 0;
 }
 
 .reviews-slider .container {
@@ -2301,7 +2340,7 @@ body {
 
 @media (max-width: 1023.98px) {
   .reviews-slider {
-    padding: 13.33vw 0 17.33vw 0;
+    padding: 13.33vw 0 0 0;
   }
 
   .reviews-slider .container {

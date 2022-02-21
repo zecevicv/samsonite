@@ -174,3 +174,20 @@ if (document.querySelectorAll('.text-collapse')) {
     });
   })
 }
+
+/* #ScrollTo Links
+======================================================= */
+const scrollToLinks = document.querySelectorAll('.scroll-to-link');
+
+scrollToLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const id = link.hash;
+    
+    const element = document.querySelector(id);
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({top: y, behavior: 'smooth'});
+  });
+});
