@@ -2725,3 +2725,130 @@ body {
     margin-bottom: 2.4vw;
   }
 }
+
+/* #Customer Service Icons
+================================================== */
+.customer-service-icons {
+  padding: 5.2vw 0;
+}
+
+.customer-service-icons ul,
+.customer-service-icons ul li,
+.customer-service-icons ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-service-icons ul li {
+  line-height: 1.22;
+}
+
+.customer-service-icons ul li:not(:last-child) {
+  margin-left: 3.65vw;
+}
+
+.customer-service-icons img {
+  width: 2.34vw;
+  margin-left: .78vw;
+}
+
+@media (max-width: 1023.98px) {
+  .customer-service-icons {
+    padding: 12vw 0;
+  }
+
+  .customer-service-icons ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .customer-service-icons ul li {
+    flex: 0 0 50%
+  }
+  
+  .customer-service-icons ul li a {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .customer-service-icons ul li {
+    line-height: 1.22;
+  }
+  
+  .customer-service-icons ul li:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 9.33vw;
+  }
+  
+  .customer-service-icons img {
+    width: 10.26vw;
+    margin-left: 0;
+    margin-bottom: 3.33vw;
+  }
+}
+
+/* #Tips
+================================================== */
+.tips {
+  padding: 6.25vw 0 7.5vw 0;
+}
+
+.tips .container {
+  width: 64%;
+}
+
+.tips .heading {
+  text-align: center;
+  width: 24vw;
+  margin: 0 auto;
+  margin-bottom: 3.125vw;
+}
+
+.tips ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -5.2vw;
+}
+
+.tips li {
+  flex: 0 0 17.5vw;
+  border-top: 1px solid #30384A;
+  padding-top: 1vw;
+  margin-bottom: 5.2vw;
+}
+
+.tips h3 {
+  margin-bottom: .25vw;
+}
+
+@media (max-width: 1023.98px) {
+  .tips {
+    padding: 13.33vw 0 24.66vw 0;
+  }
+  
+  .tips .container {
+    width: 90%;
+  }
+  
+  .tips .heading {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 9.33vw;
+  }
+  
+  .tips ul {
+    display: block;
+    margin-bottom: -9.33vw;
+  }
+  
+  .tips li {
+    padding-top: 5.33vw;
+    margin-bottom: 9.33vw;
+  }
+  
+  .tips h3 {
+    margin-bottom: .5vw;
+  }
+}
