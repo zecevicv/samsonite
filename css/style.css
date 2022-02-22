@@ -1920,6 +1920,63 @@ body {
   }
 }
 
+/* #Sticky Menu 2
+================================================== */
+.sticky-menu-2 {
+  position: fixed;
+  bottom: 1.3vw;
+  left: 1.5vw;
+  z-index: 1000;
+}
+
+.sticky-menu-2 .btn,
+.sticky-menu-2 .btn span {
+  width: 8vw;
+  height: 6vw;
+  display: flex;
+  flex-direction: column;
+  color: white!important;
+  border-radius: 4px;
+  font-size: 1.04vw;
+}
+
+.sticky-menu-2 .btn-secondary span::before {
+  display: none;
+}
+
+.sticky-menu-2 .btn img {
+  width: 2.2vw;
+  margin-bottom: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .sticky-menu-2 {
+    bottom: 13.33vw;
+    left: 0;
+  }
+  
+  .sticky-menu-2 .btn,
+  .sticky-menu-2 .btn span {
+    width: 24.66vw;
+    height: 18.66vw;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0;
+    min-width: 0;
+    font-size: 3.46vw;
+    font-weight: 500;
+  }
+  
+  .sticky-menu-2 .btn-secondary span::before {
+    display: none;
+  }
+  
+  .sticky-menu-2 .btn img {
+    width: 6.8vw;
+    margin-bottom: 1.33vw;
+  }
+}
+
 /* #Media 1
 ================================================== */
 .media-1 {
