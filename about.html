@@ -314,13 +314,14 @@
 
   <!-- Video Section -->
   <div class="video-section">
-    <picture>
-      <source media="(min-width:1024px)" srcset="img/about/video.jpg">
-      <img class="lazy" data-src="img/about/video-mobile.jpg" alt="samsonite-img">
-    </picture>
-    <a href="#">
+    <div class="video">
+      <video class="lazy" preload="metadata" loop muted playsinline autoplay data-src="video/video.mp4">
+        <source type="video/mp4" data-src="video/video.mp4" />
+      </video>
+    </div>
+    <!-- <a href="#">
       <img class="lazy" data-src="img/icons/play-icon.svg" alt="samsonite-img">
-    </a>
+    </a> -->
   </div>
 
   <!-- Media Boxes -->

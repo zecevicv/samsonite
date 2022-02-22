@@ -2479,8 +2479,8 @@ body {
   position: relative;
 }
 
-.video-section picture,
-.video-section picture img {
+.video-section .video video,
+.video-section .video source {
   width: 100%;
 }
 
