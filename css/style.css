@@ -2968,3 +2968,174 @@ body {
     text-align: center;
   }
 }
+
+/* #Stores
+================================================== */
+.stores {
+  padding: 2.6vw 0 6.77vw 0;
+}
+
+.stores .container {
+  width: 42.3%;
+}
+
+.stores .heading {
+  width: 29vw;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1.8vw;
+}
+
+.stores h1 {
+  line-height: 1.2;
+  margin-bottom: 1vw;
+}
+
+.stores h1 img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14.3vw;
+}
+
+.stores .tab-navigation {
+  margin-bottom: 2.8vw;
+}
+
+.stores .tab-navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stores .tab-btn {
+  color: #A1A1A1;
+  border-bottom: 1px solid transparent;
+  transition: all .4s ease;
+  padding-bottom: .2vw;
+}
+
+.stores .tab-btn.active {
+  color: #283FB8;
+  border-color: #283FB8;
+}
+
+.stores .tab-btn:not(:last-child) {
+  margin-left: 2vw;
+}
+
+.stores-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: -1.3vw;
+}
+
+.store-card {
+  flex: 0 0 20.31vw;
+  margin-bottom: 1.3vw;
+  border: 1px solid #EBECF4;
+}
+
+.store-card .img img {
+  width: 100%;
+  height: 12vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.store-card .text {
+  text-align: center;
+  padding: 1.8vw 3.65vw;
+}
+
+.store-card p {
+  line-height: 1.55;
+}
+
+.store-card .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.store-card .links a:first-child {
+  margin-left: 1vw;
+}
+
+.store-card .links img {
+  width: 2.34vw;
+}
+
+@media (max-width: 1023.98px) {
+  .stores {
+    padding: 9.33vw 0 17.33vw 0;
+  }
+  
+  .stores .container {
+    width: 90%;
+  }
+  
+  .stores .heading {
+    width: 92%;
+    margin-bottom: 4vw;
+  }
+  
+  .stores h1 {
+    line-height: 1.2;
+    margin-bottom: 4vw;
+  }
+  
+  .stores h1 img {
+    width: 42vw;
+  }
+
+  .stores .heading p {
+    line-height: 1.375;
+  }
+  
+  .stores .tab-navigation {
+    margin-bottom: 10.66vw;
+  }
+  
+  .stores .tab-btn {
+    padding-bottom: .2vw;
+  }
+  
+  .stores .tab-btn:not(:last-child) {
+    margin-left: 8vw;
+  }
+  
+  .stores-list {
+    display: block;
+    margin-bottom: -6.65vw;
+  }
+  
+  .store-card {
+    margin-bottom: 6.65vw;
+  }
+  
+  .store-card .img img {
+    height: 52.66vw;
+  }
+  
+  .store-card .text {
+    padding: 8vw 11.33vw;
+  }
+  
+  .store-card p {
+    line-height: 1.5;
+  }
+  
+  .store-card .links {
+    margin-top: 5.33vw;
+  }
+  
+  .store-card .links a:first-child {
+    margin-left: 4.66vw;
+  }
+  
+  .store-card .links img {
+    width: 10.26vw;
+  }
+}
