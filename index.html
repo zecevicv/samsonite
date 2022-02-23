@@ -244,7 +244,7 @@
       </div>
       <!-- Btn -->
       <div class="header-btn d-desktop">
-        <a href="#" class="btn btn-secondary"><span><img class="lazy" data-src="img/global/logo-icon.svg" alt="samsonite-img"> צור קשר</span></a>
+        <a href="#" class="popup-toggler btn btn-secondary" data-popup="#contactPopup"><span><img class="lazy" data-src="img/global/logo-icon.svg" alt="samsonite-img"> צור קשר</span></a>
       </div>
     </div>
   </header>
@@ -680,7 +680,43 @@
         <p class="f-m-26">נגישות</p>
       </a>
     </div>
-    <a href="#" class="btn btn-secondary scroll-to-link"><span><img class="lazy" data-src="img/global/logo-icon.svg" alt="samsonite-img"> צור קשר</span></a>
+    <a href="#" class="btn btn-secondary popup-toggler" data-popup="#contactPopup"><span><img class="lazy" data-src="img/global/logo-icon.svg" alt="samsonite-img"> צור קשר</span></a>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="contactPopup">
+    <!-- Content -->
+    <div class="popup-content">
+      <!-- Close -->
+      <a href="#" class="popup-close">
+        <img class="lazy" data-src="img/icons/close.svg" alt="samsonite-img">
+      </a>
+      <!-- Img -->
+      <div class="img">
+        <img class="lazy" data-src="img/global/contact-popup-img.jpg" alt="samsonite-img">
+      </div>
+      <!-- Text -->
+      <div class="text">
+        <div class="heading">
+          <h2 class="f-d-50 f-m-60 medium">צור קשר</h2>
+          <p class="f-d-18 f-m-32">השאר פרטים ונציג יחזור אליך בהקדם</p>
+        </div>
+        <form>
+          <input type="text" class="input-primary f-d-18 f-m-28" placeholder="שם מלא">
+          <input type="text" class="input-primary f-d-18 f-m-28" placeholder="טלפון">
+          <input type="text" class="input-primary f-d-18 f-m-28" placeholder="אימייל">
+          <select class="select-primary f-d-18 f-m-28">
+            <option value="1">סיבת פנייה</option>
+            <option value="2">סיבת פנייה</option>
+            <option value="3">סיבת פנייה</option>
+          </select>
+          <input type="text" class="input-primary f-d-18 f-m-28" placeholder="הודעה">
+        </form>
+        <div class="contact-form-btn">
+          <a href="#" class="btn btn-secondary"><span>שלח</span></a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Script (Vendor) -->
