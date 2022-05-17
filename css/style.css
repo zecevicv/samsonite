@@ -3204,3 +3204,161 @@ body {
     width: 4vw;
   }
 }
+
+/* #Contact
+================================================== */
+.contact {
+  padding: 2.6vw 0 0 0;
+}
+
+.contact .container {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, .09);
+}
+
+.contact .img {
+  flex: 0 0 20vw;
+}
+
+.contact .img img {
+  height: 25.3vw;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.contact .text {
+  padding: 0 7.8vw;
+}
+
+.contact .heading {
+  text-align: center;
+  margin-bottom: 1.5vw;
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -1.25vw;
+}
+
+.contact form>* {
+  flex: 0 0 47%;
+  margin-bottom: 1.25vw;
+}
+
+.contact form>*:last-child {
+  flex: 0 0 100%;
+}
+
+.contact .contact-form-btn {
+  margin-top: 1.5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact {
+    padding: 0;
+  }
+  
+  .contact .container {
+    display: block;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .contact .img img {
+    height: 48.66vw;
+  }
+  
+  .contact .text {
+    padding: 9.33vw 11.33vw 20vw 11.33vw;
+  }
+
+  .contact .heading {
+    margin-bottom: 6.65vw;
+  }
+
+  .contact form {
+    margin-bottom: -5.33vw;
+  }
+
+  .contact form>* {
+    margin-bottom: 5.33vw;
+    flex: 0 0 100%;
+  }
+
+  .contact form>*:nth-child(5),
+  .contact form>*:nth-child(6) {
+    flex: 0 0 100%;
+  }
+
+  .contact .contact-form-btn {
+    margin-top: 8.6vw;
+    text-align: center;
+  }
+}
+
+/* #Contact Info
+================================================== */
+.contact-info {
+  padding: 3.125vw 0;
+}
+
+.contact-info .container {
+  width: 70%;
+}
+
+.contact-info ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info h3 {
+  border-bottom: 1px solid #AEAEAE;
+  padding-bottom: .5vw;
+  margin-bottom: .5vw;
+}
+
+.contact-info h4 {
+  margin: 1vw 0 .25vw 0;
+}
+
+.contact-info p {
+  line-height: 1.8;
+}
+
+@media (max-width: 1023.98px) {
+  .contact-info {
+    padding: 16.66vw 0;
+    background-color: #F5F6FA;
+  }
+  
+  .contact-info .container {
+    width: 72.4%;
+  }
+  
+  .contact-info ul {
+    display: block;
+    text-align: center;
+  }
+
+  .contact-info ul li:not(:last-child) {
+    margin-bottom: 15.33vw;
+  }
+  
+  .contact-info h3 {
+    padding-bottom: 3.5vw;
+    margin-bottom: 3.5vw;
+  }
+  
+  .contact-info h4 {
+    margin: 6vw 0 2vw 0;
+  }
+  
+  .contact-info p {
+    line-height: 1.8;
+  }
+}
