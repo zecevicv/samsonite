@@ -3139,3 +3139,68 @@ body {
     width: 10.26vw;
   }
 }
+
+/* #Store
+================================================== */
+.store-page .banner .img img, 
+.store-page .banner .img picture {
+  width: 100%;
+  height: auto!important;
+}
+
+.store {
+  padding: 5.5vw 0;
+}
+
+.store .container {
+  padding: 0 13vw 0 6.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.store .img {
+  flex: 0 0 47.55vw;
+}
+
+.store .img img {
+  width: 100%;
+}
+
+.store p {
+  margin: .78vw 0 2vw 0;
+}
+
+.store p img {
+  display: inline;
+  vertical-align: middle;
+  width: .78vw;
+}
+
+@media (max-width: 1023.98px) {
+  .store {
+    padding: 9.33vw 0 0 0;
+  }
+  
+  .store .container {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  
+  .store .img {
+    margin-top: 10vw;
+  }
+  
+  .store .img img {
+    width: 100%;
+  }
+  
+  .store p {
+    margin: 4vw 0 8vw 0;
+  }
+  
+  .store p img {
+    width: 4vw;
+  }
+}
