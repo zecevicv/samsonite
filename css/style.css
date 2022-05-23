@@ -3177,6 +3177,20 @@ body {
   width: .78vw;
 }
 
+.store .links {
+  display: flex;
+  align-items: center;
+  margin-top: 2vw;
+}
+
+.store .links a:first-child {
+  margin-left: 1vw;
+}
+
+.store .links img {
+  width: 2.34vw;
+}
+
 @media (max-width: 1023.98px) {
   .store {
     padding: 9.33vw 0 0 0;
@@ -3202,6 +3216,19 @@ body {
   
   .store p img {
     width: 4vw;
+  }
+
+  .store .links {
+    margin-top: 5.33vw;
+    justify-content: center;
+  }
+  
+  .store .links a:first-child {
+    margin-left: 4.66vw;
+  }
+  
+  .store .links img {
+    width: 10.26vw;
   }
 }
 
